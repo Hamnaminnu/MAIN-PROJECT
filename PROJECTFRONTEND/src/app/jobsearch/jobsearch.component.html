@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div id="div1" *ngFor='let Recruiterdata of Recruiterdata'> 
+    <br> <h2>{{ Recruiterdata.name }}</h2><br><hr><br>
+    <h3>{{ Recruiterdata.intro }}<br></h3> 
+    <h3>{{ Recruiterdata.description }}<br></h3> 
+    <h3>{{ Recruiterdata.reasponsibilities }}<br></h3> 
+    <h3>{{ Recruiterdata.skills }}<br></h3> <br><br>
+    <form (ngSubmit)="check()">
+    <div class="clearfix" >
+    <button type="submit"  >APPLY</button>
+    </div></form>                
+</div>
+<app-footer></app-footer>

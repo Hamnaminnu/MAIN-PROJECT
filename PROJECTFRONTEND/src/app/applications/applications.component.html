@@ -1,0 +1,27 @@
+
+<app-header></app-header>
+
+<form (ngSubmit)="jobdata()">
+    
+    <br><br><h3>(apply one job only)</h3><br>
+     EMAIL :<input type="email" placeholder="Enter your registered Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" [(ngModel)]="jobdat.email" required>  <br> 
+     <br>NAME :<input type="text" placeholder="Enter your registered name" name="name"  [(ngModel)]="jobdat.uname" required> <br> 
+      <br>COMPANY NAME :<input type="text" name="name" placeholder= "Enter company Name" [(ngModel)]="jobdat.rname" required /><br>  <br> JOB DESCRIPTION :
+     <input type="text" name="address" placeholder="Enter job Description" style="width: 300px; height: 70px;" [(ngModel)]="jobdat.description"  required>  
+        <br>
+     <div class="clearfix">
+         <button type="submit" >ok</button>
+       </div>
+     </form>
+<div id="div1">
+    <form (ngSubmit)="statusprofile()">
+        <br><br><h3>get applied job details</h3><br>
+         <input type="email" placeholder="Enter your registered Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" [(ngModel)]="profiles.email" required>  
+         <div class="clearfix">
+             <button type="submit" >ok</button>
+           </div>
+         </form><br>
+         {{onedata.rname}}<br>
+         {{onedata.description}}
+</div>
+<app-footer></app-footer>

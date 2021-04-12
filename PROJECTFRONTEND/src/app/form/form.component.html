@@ -1,0 +1,96 @@
+<div id="div1">
+<form  (ngSubmit)="Adddata()" action="">
+    <h5>PERSONAL DETAILS</h5><br><div>
+    <label> Firstname : </label>&nbsp;&nbsp;&nbsp;
+    <input type="text" name="firstname" placeholder= "Enter Firstname" size="25" [(ngModel)]="CandidateItem.firstname" required /><br>   
+    <label> Lastname : </label>&nbsp;&nbsp;&nbsp;    
+    <input type="text" name="lastname" placeholder="Enter Lastname" size="25" [(ngModel)]="CandidateItem.lastname" required /><br>   
+    <label>   
+    Gender :  
+    </label>&nbsp;&nbsp;&nbsp; 
+    <!-- <br>  
+    <input type="radio" value="Male" name="gender" checked > Male   
+    <input type="radio" value="Female" name="gender"> Female   
+    <input type="radio" value="Other" name="gender"> Other  <br> <br>   -->
+    <!-- <select name="Gender">
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+		<option value="Other">Other</option>
+	</select><br> -->
+    <input type="text" name="gender" placeholder="Enter Gender" [(ngModel)]="CandidateItem.gender" required><br>
+    <label for="birthday">Birthday :</label>&nbsp;&nbsp;&nbsp;
+    <input type="date" id="birthday" [(ngModel)]="CandidateItem.birthday" name="birthday"><br>   
+    <label>   
+    Phone Number:  
+    </label> &nbsp;&nbsp;&nbsp;
+    <input type="text" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter phone no." maxlength="10" [(ngModel)]="CandidateItem.phonenumber" required> <br> 
+    <label for="email">Email :</label> &nbsp;&nbsp;&nbsp; 
+    <input type="email" placeholder="Enter Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" [(ngModel)]="CandidateItem.email" required>  
+    <br>  
+    Current Address :  &nbsp;&nbsp;
+    <input type='text' style="width: 500px; height: 150px;" name="address" placeholder="Enter Current Address"  [(ngModel)]="CandidateItem.address" required>  
+    <br> <br>
+    <label>State :</label>&nbsp;&nbsp;&nbsp;
+    <input type="text" name="State" placeholder="Enter State" [(ngModel)]="CandidateItem.state" required><br>
+    </div>  
+    <hr>
+    <h5>EDUCATION DETAILS</h5><br>
+    <div><h6>Graduation</h6>
+    <label>
+    Institution Name :
+    </label>&nbsp;&nbsp;&nbsp; <input type="text" name="Institution1" [(ngModel)]="CandidateItem.institute1" placeholder="Enter Institution" required /><br>
+    <label>Course Name :</label>&nbsp;&nbsp;&nbsp; <input type="text"  [(ngModel)]="CandidateItem.course1" name='course1' placeholder="Enter Course" required><br>
+    <label>Stream :</label>&nbsp;&nbsp;&nbsp; <input type="text" [(ngModel)]="CandidateItem.stream1" name="Stream1" placeholder="Enter Stream" required><br>
+    <label>Passing Out Year :</label>&nbsp;&nbsp;&nbsp; <input type="text" name="Year1" [(ngModel)]="CandidateItem.passout1" placeholder="Enter Year" maxlength="4" required><br>
+    <label>Percentage/ Score/ Grade :</label>&nbsp;&nbsp;&nbsp; <input type="text" [(ngModel)]="CandidateItem.score1" name="Score1" placeholder="Enter Score"  required><br><br><br>
+    <h6>Post Graduation( if no put NA)</h6>
+    <label>
+    Institution Name :
+    </label>&nbsp;&nbsp;&nbsp; <input type="text" name="Institution2" placeholder="Enter Institution" [(ngModel)]="CandidateItem.institute2" required /><br>
+    <label>Course Name :</label>&nbsp;&nbsp;&nbsp; <input type="text" name='course2' [(ngModel)]="CandidateItem.course2" placeholder="Enter Course" required><br>
+    <label>Stream :</label>&nbsp;&nbsp;&nbsp; <input type="text" name="Stream2" [(ngModel)]="CandidateItem.stream2" placeholder="Enter Stream" required><br>
+    <label>Passing Out Year :</label>&nbsp;&nbsp;&nbsp; <input type="text" [(ngModel)]="CandidateItem.passout2" name="Year2" placeholder="Enter Year" maxlength="4" required><br>
+    <label>Percentage/ Score/ Grade :</label>&nbsp;&nbsp;&nbsp;<input type="text" [(ngModel)]="CandidateItem.score2" name="Score2" placeholder="Enter Score"  required><br> <br><br>
+    <h6>Tenth</h6>
+    <label>
+    Institution Name :
+    </label>&nbsp;&nbsp;&nbsp; <input type="text" name="Institution3" [(ngModel)]="CandidateItem.institute3" placeholder="Enter Institution" required /><br>
+    <label>Passing Out Year :</label>&nbsp;&nbsp;&nbsp; <input type="text" [(ngModel)]="CandidateItem.passout3" name="Year3" placeholder="Enter Year" maxlength="4" required><br>
+    <label>Percentage/ Score/ Grade :</label>&nbsp;&nbsp;&nbsp; <input type="text" name="Score3" [(ngModel)]="CandidateItem.score3" placeholder="Enter Score"  required><br><br><br>
+    <h6>Twelveth</h6>
+    <label>
+    Institution Name :
+    </label>&nbsp;&nbsp;&nbsp; <input type="text" name="Institution4" [(ngModel)]="CandidateItem.institute4" placeholder="Enter Institution" required /><br>
+    <label>Stream :</label>&nbsp;&nbsp;&nbsp; <input type="text" name="Stream4" [(ngModel)]="CandidateItem.stream4" placeholder="Enter Stream" required><br>
+    <label>Passing Out Year :</label>&nbsp;&nbsp;&nbsp; <input type="text" name="Year4" [(ngModel)]="CandidateItem.passout4" placeholder="Enter Year" maxlength="4" required><br>
+    <label>Percentage/ Score/ Grade :</label>&nbsp;&nbsp;&nbsp; <input type="text" [(ngModel)]="CandidateItem.score4" name="Score4" placeholder="Enter Score"  required><br>
+    </div><hr>
+    <h5>TRAINING/ COURSE</h5>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Training program :</label>&nbsp;&nbsp;&nbsp;<input type="text" name='training' [(ngModel)]="CandidateItem.training" placeholder="Enter Name"><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Organization :</label>&nbsp;&nbsp;&nbsp;<input type="text"  name="organization" [(ngModel)]="CandidateItem.organization" placeholder="Enter Organization"><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Duration :</label>&nbsp;&nbsp;&nbsp;<input type="text" name='duration' [(ngModel)]="CandidateItem.duration" placeholder="Enter Duration"><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Description :</label>&nbsp;&nbsp;&nbsp;<input type='text' name="description"  placeholder="Enter Description" [(ngModel)]="CandidateItem.description" style="width: 500px; height: 150px;" >
+    
+    <hr><h5>MY SKILL HIGHLIGHTS</h5><br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Skills :</label>&nbsp;&nbsp;&nbsp;<input type='text' name="skills" style="width: 500px; height: 150px;" [(ngModel)]="CandidateItem.skills" placeholder="Enter your Skills" required><hr>
+    <h5>RESUME AND COVER LETTER</h5>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label >Add Resume :</label>&nbsp;&nbsp;&nbsp;
+    <input type="file" id="resume" [(ngModel)]="CandidateItem.resume" name="myfile"><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Cover Letter :</label>&nbsp;&nbsp;&nbsp;<input type='text' name="coverletter" style="width: 500px; height: 150px;" placeholder="Enter Coverletter" [(ngModel)]="CandidateItem.coverletter" required><br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Add Photo :</label>&nbsp;&nbsp;&nbsp;<input type="file" name="photo"  [(ngModel)]="CandidateItem.photo" required>
+    <hr>
+    <h5>GET IN TOUCH</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label>   
+    Phone Number:  
+    </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="phone" placeholder="Enter phone no." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxlength="10" required> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="email">Email :</label> &nbsp;&nbsp;&nbsp; 
+    <input type="email" placeholder="Enter Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>  
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label>LinkedIn</label><input type="text" name="link" placeholder="Enter Link" [(ngModel)]="CandidateItem.link" ><br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+    <div class="clearfix">
+        <button type="submit" >Done</button>
+      </div>
+</form>
+</div>

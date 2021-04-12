@@ -1,0 +1,12 @@
+<app-headerrecruite></app-headerrecruite> <h3>ALL APPLICATIONS</h3>
+<div id="div1" *ngFor='let jobdat of jobdat'> 
+  <!-- <img
+      [src] = 'Candidatedata.photo' 
+      [style.width.px] = '5' 
+      [style.margin.px] = '5'><br> -->
+    
+  <h3>NAME OF CANDIDATE : </h3> {{ jobdat.name }}<br><br>
+  <h3>EMAIL ID OF CANDIDATE : </h3>  {{ jobdat.email }}<br><br>
+  <h3>NAME OF COMPANY (APPLIED) : </h3>{{ jobdat.comname }}<br><br>
+  <h3>JOB DESCRIPTION : </h3> {{ jobdat.description}}<br></div>
+<app-footer></app-footer>

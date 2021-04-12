@@ -1,0 +1,26 @@
+div{
+    background-color: rgb(216,226,220);
+    height:800px;
+    text-align: center;
+}
+h1{ padding-top:200px;
+    color:whitesmoke;
+    font-size: 900%;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    
+}
+h2{
+    color: white;
+    font-size: x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva, Verdana, sans-serif';
+    
+    
+}
+a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva, Verdana, sans-serif';
+    color: white;
+    background-color:  rgb(216,226,220);
+}
+a:hover{
+    color: grey;
+}

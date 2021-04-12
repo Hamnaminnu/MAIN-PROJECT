@@ -1,0 +1,22 @@
+<div id="div1">
+    <form  (ngSubmit)="Adddata()" >
+        <h5>Company Introduction</h5>
+        &nbsp;&nbsp; &nbsp;&nbsp;<label> Name : </label>&nbsp;&nbsp;&nbsp;
+        <input type="text" name="name" placeholder= "Enter Name" [(ngModel)]="RecruiterItem.name" required /><br>   &nbsp;&nbsp; &nbsp;&nbsp;
+        <input type="text" name="intro" placeholder="Enter Introduction" style="width: 500px; height: 150px;" [(ngModel)]="RecruiterItem.intro" required>  
+        <br> <br>
+        <hr>
+        <h5>Job Description</h5><br>&nbsp;&nbsp; &nbsp;&nbsp;
+        <input type="text" name="address" placeholder="Enter Description" style="width: 500px; height: 150px;" [(ngModel)]="RecruiterItem.description"  required>  
+        <br> <br><hr>
+        <h5>Responsibilities</h5><br>&nbsp;&nbsp; &nbsp;&nbsp;
+        <input type="text" name="reasponsibilities" placeholder="Enter Responsibilities" style="width: 500px; height: 150px;" [(ngModel)]="RecruiterItem.reasponsibilities" required>  
+        <br> <br><hr>
+        <h5>Skills and Qualifications</h5><br>&nbsp;&nbsp; &nbsp;&nbsp;
+        <input type="text" name="skills" placeholder="Enter Skills and Qualifications" style="width: 500px; height: 150px;" [(ngModel)]="RecruiterItem.skills" required>  
+       <br> <br>
+       <div class="clearfix">
+        <button type="submit" >Done</button>
+      </div>
+    </form>
+    </div>

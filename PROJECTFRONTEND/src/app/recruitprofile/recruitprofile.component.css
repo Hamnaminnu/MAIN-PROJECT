@@ -1,0 +1,41 @@
+#div1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-color:  rgb(216,226,220);
+    padding: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    height: 450px;
+    text-align: center;
+    
+}
+h3{
+    font-size: large;
+    color:  rgb(151, 150, 150);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+hr{
+    border-top: 2px dashed rgb(216,226,220);
+}
+div{
+    padding-left: 50px;
+    color:  rgb(97, 96, 96);
+
+}
+button{
+    margin-top: 10px;
+    background-color: rgb(216,226,220);
+    border: rgb(216,226,220);
+    color: white;
+    margin-left: 100px;
+}
+input{
+    background-color:rgb(216,226,220) ;
+    border: white;
+    color: white;
+    margin-left: 100px;
+    width:200px;
+
+}

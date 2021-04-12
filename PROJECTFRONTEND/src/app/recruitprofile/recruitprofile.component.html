@@ -1,0 +1,16 @@
+<app-headerrecruite></app-headerrecruite>
+<form (ngSubmit)="profile()">
+    <br><br><br>
+     <input type="text" placeholder="Enter your registered name" name="name"  [(ngModel)]="profiles.aname" required>  
+     <div class="clearfix">
+         <button type="submit" >ok</button>
+       </div>
+     </form>
+<div id="div1" > 
+                     <br> <h2>{{ Recruiterdata.name }}</h2><br><hr><br>
+                     <h3>{{ Recruiterdata.intro }}<br></h3> 
+                     <h3>{{ Recruiterdata.description }}<br></h3> 
+                     <h3>{{ Recruiterdata.reasponsibilities }}<br></h3> 
+                     <h3>{{ Recruiterdata.skills }}<br></h3>                 
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,26 @@
+/* div{
+    background-color: rgb(216,226,220);
+    height: 50px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 400%;
+    color: whitesmoke;
+    padding-left: 20px;
+} */
+div{
+    background-color: rgb(216,226,220);
+}
+ul{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva, Verdana, sans-serif';
+    padding-bottom: 10px;
+}
+h1{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 350%;
+    /* padding-top: 10px; */
+    color: whitesmoke;
+    padding-left: 20px;
+}    
+a{
+    color: white;
+}
+/* background-color:rgb(236,228,219); */

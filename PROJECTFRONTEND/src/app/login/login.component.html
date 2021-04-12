@@ -1,0 +1,12 @@
+<div>
+<form (ngSubmit)="check()">  
+    <div class="container">   
+        <label>Username : </label>   
+        <input type="text" placeholder="Enter Name" name="username" [(ngModel)]="user.uname" required>  
+        <label>Password : </label>   
+        <input type="password" placeholder="Enter Password" name="password" [(ngModel)]="user.password" required>  
+        <button type="submit">Login</button>   
+           
+        Don't have an account?<a href="signup"> Signup </a>   
+    </div>   
+</form></div>    

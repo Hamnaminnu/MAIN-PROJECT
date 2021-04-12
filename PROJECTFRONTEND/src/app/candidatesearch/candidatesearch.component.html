@@ -1,0 +1,46 @@
+<app-headerrecruite></app-headerrecruite>
+<div id="div1" *ngFor='let Candidatedata of Candidatedata'> 
+    <!-- <img
+        [src] = 'Candidatedata.photo' 
+        [style.width.px] = '5' 
+        [style.margin.px] = '5'><br> -->
+        <img src="/assets/images/candidate.jpg" style="height: 150px; "><br> <br>
+     {{ Candidatedata.firstname }}
+      {{ Candidatedata.lastname }}<br>
+      {{ Candidatedata.gender }}<br>
+      {{Candidatedata.birthday}}<br>
+      {{Candidatedata.address}}<br>
+      {{Candidatedata.state}}<br><br>
+      <h3>GRADUATE</h3><br>
+      {{Candidatedata.institute1}}<br>
+      {{Candidatedata.course1}}<br>
+      {{Candidatedata.stream1}}<br>
+      {{Candidatedata.score1}}<br>
+      {{Candidatedata.passout1}}<br><br>
+      <h3>POST GRADUATE</h3><br>
+      {{Candidatedata.institute2}}<br>
+      {{Candidatedata.course2}}<br>
+      {{Candidatedata.stream2}}<br>
+      {{Candidatedata.score2}}<br>
+      {{Candidatedata.passout2}}<br><br><h3>TENTH</h3><br>
+      {{Candidatedata.institute3}}<br>
+      {{Candidatedata.score3}}<br>
+      {{Candidatedata.passout3}}<br><br><h3>TWELVETH</h3><br>
+      {{Candidatedata.institute4}}<br>
+      {{Candidatedata.stream4}}<br>
+      {{Candidatedata.score4}}<br>
+      {{Candidatedata.passout4}}<br><br><h3>TRAINING/ COURSE</h3><br>
+      {{Candidatedata.training}}<br>
+      {{Candidatedata.organization}}<br>
+      {{Candidatedata.duration}}<br>
+      {{Candidatedata.description}}<br><br><h3>MY SKILL </h3><br>
+      {{Candidatedata.skills}}<br><br><h3>CONTACTS</h3><br>
+      {{Candidatedata.phonenumber}}<br>
+      {{Candidatedata.email}}<br>
+      {{Candidatedata.link}}<br>
+    
+
+
+</div>
+
+<app-footer></app-footer>
